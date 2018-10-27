@@ -8,7 +8,7 @@ if __name__ =='__main__':
     while True:
         for url in urls_addrs:
             data = getData(url)
-            if data<1000.0:
+            if data<10.0:
                 ret=sendMail(urls_addrs[url])
                 if ret:
                     print("邮件发送成功")
